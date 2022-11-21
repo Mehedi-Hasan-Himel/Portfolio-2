@@ -62,7 +62,9 @@ h1 {
 }
 section {
   /* margin-right: 8rem; */
-  height: 100vh;
+  /* height: 70vh; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 section > h2,

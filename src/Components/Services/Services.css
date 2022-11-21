@@ -1,0 +1,64 @@
+.services__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.services {
+  background: var(--color-bg-variant);
+  border-radius: 0 0 2rem 2rem;
+  border: 3px solid var(--color-primary);
+  height: fit-content;
+  transition: var(--transition);
+}
+.services:hover {
+  background: var(--color-light);
+  /* border-color: var(--color-primary-variant); */
+  cursor: progress;
+}
+
+.services__head {
+  background: var(--color-primary);
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.services__head h3 {
+  color: var(--color-bg);
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.service__list {
+  padding: 2rem;
+}
+.service__list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+.service__list-icon{
+   color: var(--color-primary);
+   margin-top: -2px;
+   font-size: 2rem;
+}
+.service__list p{
+   font-size: 0.9rem;
+}
+
+/* ======== Media Query Styles Start (Medium Devices) ======== */
+@media screen and (max-width: 1024px) {
+   .services__container{
+      grid-template-columns: repeat(2,1fr);
+      /* gap: 2rem; */
+   }
+   .services {
+      height: auto;
+   }
+
+}
+/* ======== Media Query Styles Start (Small Devices) ======== */
+@media screen and (max-width: 600px) {
+
+}
