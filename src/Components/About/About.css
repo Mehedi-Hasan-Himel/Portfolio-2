@@ -36,7 +36,7 @@
 }
 .about__card {
   background: var(--color-bg-variant);
-  border: 1px solid transparent;
+  border: transparent;
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
@@ -44,14 +44,23 @@
 }
 
 .about__card:hover {
-  background: var(--color-light);
+  /* background: var(--color-light); */
+  background: linear-gradient(
+    60deg,
+    transparent,
+    var(--color-primary-variant),
+    transparent
+  );
   border-color: var(--color-primary-variant);
   cursor: progress;
 }
-
+.about__card:hover > .about__icon {
+  color: var(--color-bg);
+}
 .about__icon {
   color: var(--color-primary);
-  font-size: 1.4rem;
+  font-size: 2rem;
+
   margin-bottom: 1rem;
 }
 
@@ -98,5 +107,15 @@
   }
   .about__content p {
     margin: 1.5rem 0;
+  }
+}
+
+/* ======== Media Query Styles Start (Smallest Devices) ======== */
+@media screen and (max-width: 400px) {
+  .about__cards {
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+    gap: 1em;
   }
 }

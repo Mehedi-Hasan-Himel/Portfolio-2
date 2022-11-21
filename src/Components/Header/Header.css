@@ -34,6 +34,7 @@
   height: 2rem;
   background: var(--color-primary);
 }
+
 /*  ============== Header Socials End ============== */
 
 /*  ============== Scroll Down Start ============== */
@@ -70,10 +71,21 @@
 }
 /* ======== Media Query Styles Start (Small Devices) ======== */
 @media screen and (max-width: 600px) {
-   .header {
+  .header {
     height: 100vh;
   }
-  .header__social,.scroll__down{
-   display: none;
+  .header__social,
+  .scroll__down {
+    display: none;
+  }
+}
+/* ======== Media Query Styles Start (Smallest Devices) ======== */
+
+@media screen and (max-width: 350px) {
+  h1{
+    font-size: 2.1rem;
+  }
+   .me {
+    width: 90%;
   }
 }
