@@ -13,7 +13,7 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <MdOutlineEmail></MdOutlineEmail>
+            <MdOutlineEmail className="contact__option-icon"></MdOutlineEmail>
             <h4>Email</h4>
             <h5>mehedihasanhimel89@gmail.com</h5>
             <a href="mailto:mehedihasanhimel89@gmail.com" target="_blank">
@@ -21,7 +21,7 @@ const Contact = () => {
             </a>
           </article>
           <article className="contact__option">
-            <RiMessengerLine></RiMessengerLine>
+            <RiMessengerLine className="contact__option-icon"></RiMessengerLine>
             <h4>Messenger</h4>
             <h5>Mehedi Hasan Himel</h5>
             <a href="https://m.me/mehedihasanhimel.jsx" target="_blank">
@@ -29,7 +29,7 @@ const Contact = () => {
             </a>
           </article>
           <article className="contact__option">
-            <BsWhatsapp></BsWhatsapp>
+            <BsWhatsapp className="contact__option-icon"></BsWhatsapp>
             <h4>Whatsapp</h4>
             <h5>+8801312778360</h5>
             <a
@@ -49,8 +49,15 @@ const Contact = () => {
             required
           />
           <input type="text" name="email" placeholder="Your Email" required />
-              <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
-              <button type="submit" className="btn btn-primary">Send Massage</button>
+          <textarea
+            name="message"
+            rows="7"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" className="btn btn-primary">
+            Send Massage
+          </button>
         </form>
       </div>
     </section>
