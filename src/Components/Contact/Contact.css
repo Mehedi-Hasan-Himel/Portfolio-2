@@ -68,5 +68,8 @@ textarea {
 }
 
 /* ======== Media Query Styles Start (Smallest Devices) ======== */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 350px) {
+  .container.contact__container {
+    width: 80%;
+  }
 }
