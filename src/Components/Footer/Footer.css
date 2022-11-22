@@ -12,6 +12,7 @@ footer {
   width: 80%;
   margin: 0 auto;
   border-radius: 3rem;
+  margin-bottom: 1rem;
 }
 footer a {
   color: var(--color-primary);
